@@ -1,0 +1,99 @@
+.cloud-1{
+    transform: scale(0.3);
+    animation: movement-cloud-1 65s linear infinite 5s;
+}
+
+@keyframes movement-cloud-1 {
+    0% { transform: translateX(50px) scale(0.3); }
+    77%, 100% { transform:  translateX(610px) scale(0.3);}
+}
+
+.cloud-2{
+    animation: movement-cloud-2 39s linear infinite;
+}
+
+@keyframes movement-cloud-2 {
+    0% { transform: translateX(40px) scale(-0.4, 0.4); }
+    82%, 100% { transform:translateX(650px) scale(-0.4, 0.4); }
+}
+
+.cloud-3{
+    transform: translateX(30px)  scale(0.5);
+    animation: movement-cloud-3 30s linear infinite 7s;
+}
+
+@keyframes movement-cloud-3 {
+    0% { transform:translateX(30px)  scale(0.5); }
+    83%, 100% { transform:translateX(650px) scale(0.5); }
+}
+
+
+.cloud-4{
+    animation: movement-cloud-4 19s linear infinite;
+}
+
+@keyframes movement-cloud-4 {
+    0% { transform:translateX(20px) scale(-0.6, 0.6);}
+    90%, 100% { transform:translateX(650px) scale(-0.6, 0.6); }
+}
+
+.sun{
+    animation: sun-rotate 16s linear infinite;
+}
+
+.sun-wrapper{
+    animation: sun-rotate 100s linear infinite;
+}
+
+@keyframes sun-rotate{
+    to { transform: rotate(1turn); }
+
+}
+
+.box_front{
+    animation: background-changes 100s linear infinite;
+
+}
+
+@keyframes background-changes{
+    0% { background: skyblue;
+        box-shadow: 0 -400px 300px -300px steelblue inset; }
+
+    22% { background: darkslateblue;
+        box-shadow: 0 -400px 300px -300px orangered inset;}
+
+    50%, 65% { background: darkslateblue;
+        box-shadow: 0 -400px 300px -300px transparent inset; }
+    100% { background: skyblue;
+        box-shadow: 0 -400px 300px -300px steelblue inset;  }
+
+}
+
+.ship{
+    transform: translateX(100px);
+    animation: ship-movement 60s linear infinite 3s;
+}
+
+
+@keyframes ship-movement {
+    0% { transform:translateX(100px)}
+    88%, 100% { transform:translateX(-630px) }
+}
+
+.smoke-1{
+    animation: smoke 2s cubic-bezier(.86,1.16,.48,.21) infinite;
+
+}
+.smoke-2{
+    animation: smoke 2s cubic-bezier(.86,1.16,.48,.21) infinite 800ms;
+}
+.smoke-3{
+    animation: smoke 2s cubic-bezier(.86,1.16,.48,.21) infinite 1600ms;
+}
+
+@keyframes smoke{
+    to{
+        opacity: 0;
+        transform: translateY(-20px) scale(2) ;
+    }
+}
